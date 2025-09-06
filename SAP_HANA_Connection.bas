@@ -1,6 +1,11 @@
 Attribute VB_Name = "SAP_HANA_Connection"
 Option Explicit
 
+' Wraps value in braces and escapes closing braces for ODBC connection strings.
+Private Function EscapeOdbc(ByVal value As String) As String
+    EscapeOdbc = "{" & Replace(value, "}", "}}") & "}"
+End Function
+
 ' Establishes a connection to SAP HANA and executes a query.
 ' Requires reference: Tools > References > Microsoft ActiveX Data Objects x.x Library.
 
@@ -17,8 +22,8 @@ Public Function OpenHanaConnection( _
     ' DSN-less connection string for SAP HANA.
     ' Use HDBODBC32 for 32-bit Office installations.
     conn.ConnectionString = _
-        "Driver={HDBODBC};ServerNode=" & ServerNode & _
-        ";UID=" & UserName & ";PWD=" & Password
+        "Driver={HDBODBC};ServerNode=" & EscapeOdbc(ServerNode) & _
+        ";UID=" & EscapeOdbc(UserName) & ";PWD=" & EscapeOdbc(Password)
 
     conn.Open
     Set OpenHanaConnection = conn
