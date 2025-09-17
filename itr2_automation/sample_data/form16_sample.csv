@@ -1,0 +1,11 @@
+Field,Description,Amount
+Gross Salary,Salary income as per Form 16,1200000
+Exempt Allowances,Section 10 exemptions (HRA etc.),150000
+Standard Deduction,Standard deduction u/s 16(ia),50000
+Professional Tax,Section 16(iii) deduction,2400
+Other Income Declared,Interest income declared to employer,10000
+TDS,Tax deducted by employer,110000
+80C,PF and LIC investments,150000
+80CCD(1B),NPS additional contribution,50000
+80D,Medical insurance premium,25000
+80TTA,Savings interest deduction,10000

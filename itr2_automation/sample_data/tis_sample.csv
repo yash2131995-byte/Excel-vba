@@ -1,0 +1,5 @@
+Type,Category,Amount,Description
+Income,Interest Income,5000,Interest not in AIS
+Income,Dividend,2000,Mutual fund dividend
+Deduction,80E,40000,Education loan interest
+TaxPaid,Advance Tax,15000,Advance tax paid in March
