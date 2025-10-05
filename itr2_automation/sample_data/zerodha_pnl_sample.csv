@@ -1,0 +1,5 @@
+Type,Segment,Amount,Description
+STCG Equity,Equity delivery,45000,Short term equity gains
+LTCG Equity,Equity delivery,90000,Long term equity gains
+Intraday Equity,Equity intraday,12000,Intraday speculative profit
+Futures Options,Index futures,35000,F&O profit
